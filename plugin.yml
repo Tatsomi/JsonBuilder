@@ -1,0 +1,20 @@
+name: JsonBuilder
+main: JsonBuilder\Main
+version: 1.0.0
+api: 5.0.0
+author: Tatsomi
+description: Build structures from JSON.
+
+commands:
+  refresh:
+    description: Reload the JSON data file from disk.
+    permission: jsonbuilder.command.refresh
+  build:
+    description: Build the structure defined in the loaded JSON data.
+    permission: jsonbuilder.command.build
+
+permissions:
+  jsonbuilder.command.refresh:
+    default: op
+  jsonbuilder.command.build:
+    default: op
